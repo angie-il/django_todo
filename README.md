@@ -26,7 +26,7 @@ A simple To-Do List application built with Django.
 
 ```
 git clone https://github.com/angie-il/django_todo.git
-cd django_todo
+cd django_todo/todo_list
 ```
 
 2. Create and activate a virtual environment:
@@ -35,35 +35,42 @@ cd django_todo
 python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 ```
+3. Install Django
 
-3. Generate SECRET_KEY
+```
+pip install django
+```
+
+4. Generate SECRET_KEY
 
 ```
 python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
 ```
 
-4. Copy .env.example to .env and add the generated key to your .env 
+5. Copy .env.example to .env and add the generated key to your .env 
 
 ```
+cp .env.example .env
+
 SECRET_KEY= 'GENERATED KEY'
 ``` 
 
-5. Install the required packages:
+6. Install the required packages:
 
 ```
 pip install -r requirements.txt
 ```
 
-6. Apply migrations:
+7. Apply migrations:
 
 ```
 python manage.py migrate
 ```
 
-7. Run the development server:
+8. Run the development server:
 
 ```
 python manage.py runserver
 ```
 
-8. Open your web browser and go to http://localhost:8000.
+9. Open your web browser and go to http://localhost:8000.
