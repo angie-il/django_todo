@@ -42,8 +42,7 @@ source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
 ```
 
-4. Add generated key to .env.example
-   Create or edit the .env.example file in the root directory of your project
+4. Copy .env.example to .env and add the generated key to your .env 
 
 ```
 SECRET_KEY= 'GENERATED KEY'
