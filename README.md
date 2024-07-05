@@ -26,7 +26,7 @@ A simple To-Do List application built with Django.
 
 ```
 git clone https://github.com/angie-il/django_todo.git
-cd django_todo/todo_list
+cd django_todo
 ```
 
 2. Create and activate a virtual environment:
