@@ -1,0 +1,18 @@
+body {
+  padding-top: 5rem;
+}
+
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.form-group label {
+  display: block;
+}
+
+.badge-smaller {
+  font-size: 9.5px;
+  font-weight: normal;
+  vertical-align: middle;
+}
