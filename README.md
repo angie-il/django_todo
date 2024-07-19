@@ -17,7 +17,7 @@ A simple To-Do List application built with Django.
 ## Requirements
 
 - Python 3.12.3
-- Django 5.0.6
+- Django 5.0.7
 - Bootstrap 4.5.2
 
 ## Installation
