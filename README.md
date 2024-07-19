@@ -35,23 +35,42 @@ cd django_todo/todo_list
 python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 ```
+3. Install Django
 
-3. Install the required packages:
+```
+pip install django
+```
+
+4. Generate SECRET_KEY
+
+```
+python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
+```
+
+5. Copy .env.example to .env and add the generated key to your .env 
+
+```
+cp .env.example .env
+
+SECRET_KEY= 'GENERATED KEY'
+``` 
+
+6. Install the required packages:
 
 ```
 pip install -r requirements.txt
 ```
 
-4. Apply migrations:
+7. Apply migrations:
 
 ```
 python manage.py migrate
 ```
 
-5. Run the development server:
+8. Run the development server:
 
 ```
 python manage.py runserver
 ```
 
-6. Open your web browser and go to http://localhost:8000.
+9. Open your web browser and go to http://localhost:8000.
